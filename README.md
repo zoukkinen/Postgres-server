@@ -2,7 +2,7 @@
  Postgres server for local development
 
 
-This server is used in few projects, easy to setup and turn on and off
+This server is can be used in dev projects, easy to setup and turn on and off. This version saves data to volume, so you can turn it off when needed without losing your data.
 
 
 ## Start Postgres
@@ -10,6 +10,11 @@ Pull the postgres image from hub.docker.com, create a container named "my_postgr
 
 ``` docker-compose up -d ```
 
+Credentials are in docker-compose.yml
+
+Port to connect is also in there.
+
+## This is not necessary
 See that it's working
 
 See the logs:
@@ -24,23 +29,6 @@ hit *CTRL+D* to exit
 
 For other commands such as starting, stopping, listing or deleting, see my Docker cheat sheet.
 
-## Create a database
+## Create a new database
 
 ```docker exec -it my_postgres psql -U postgres -c "create database my_database"```
-
-## Connect using Python and psycopg2
-
-```
-python3.6 -m venv myenv
-source myenv/bin/activate
-pip install psycopg2-binary
-```
-### Use the file named myscript.py
-
-## Run it
-
-```
-python myscript.py
-```
-
-*(1, 100, 'abcdef')*
