@@ -1,5 +1,6 @@
 # Postgres server
  Postgres server for local development
+ Based on this: https://www.saltycrane.com/blog/2019/01/how-run-postgresql-docker-mac-local-development/
 
 
 This server is can be used in dev projects, easy to setup and turn on and off. This version saves data to volume, so you can turn it off when needed without losing your data.
@@ -27,7 +28,7 @@ Try running psql:
 
 hit *CTRL+D* to exit
 
-For other commands such as starting, stopping, listing or deleting, see my Docker cheat sheet.
+For other commands such as starting, stopping, listing or deleting, see this Docker cheat sheet. https://www.saltycrane.com/blog/2017/08/docker-cheat-sheet/
 
 ## Create a new database
 
